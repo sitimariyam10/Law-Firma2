@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhiyaksa & Partners Law Firm | Firma Hukum Terbaik & Terpercaya di Indonesia</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f4f6fa',
+                            100: '#e5eaf3',
+                            500: '#1e3a8a',
+                            800: '#111827',
+                            900: '#0f172a',
+                            950: '#020617',
+                        },
+                        gold: {
+                            100: '#fef08a',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700;800&family=Playfair+Display:ital,wght=0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        .font-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(2, 6, 23, 0.95)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+        .custom-shadow {
+            box-shadow: 0 20px 40px -15px rgba(2, 6, 23, 0.1);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ca8a04;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-navy-50 text-slate-800 font-sans leading-relaxed">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-navy-950/90 backdrop-blur-md border-b border-white/10 transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-gradient-to-br from-gold-500 to-gold-700 p-2.5 rounded-lg shadow-lg">
+                            <i class="fa-solid fa-scale-balanced text-navy-950 text-xl"></i>
+                        </div>
+                        <div>
+                            <span class="font-serif text-white font-bold text-lg md:text-xl tracking-wider block leading-none">ADHIYAKSA</span>
+                            <span class="text-xs text-gold-400 tracking-[0.2em] uppercase font-semibold">&amp; Partners Law Firm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#beranda" class="text-slate-300 hover:text-gold-400 transition-colors py-2 text-sm font-medium">Beranda</a>
+                    <a href="#tentang" class="text-slate-300 hover:text-gold-400 transition-colors py-2 text-sm font-medium">Tentang</a>
+                    <a href="#layanan" class="text-slate-300 hover:text-gold-400 transition-colors py-2 text-sm font-medium">Layanan</a>
+                    <a href="#ahli-hukum" class="text-slate-300 hover:text-gold-400 transition-colors py-2 text-sm font-medium">Para Advokat</a>
+                    <a href="#faq" class="text-slate-300 hover:text-gold-400 transition-colors py-2 text-sm font-medium">FAQ</a>
+                    <a href="#kontak" class="text-slate-300 hover:text-gold-400 transition-colors py-2 text-sm font-medium">Kontak</a>
+                    <a href="https://wa.me/6285372687679" target="_blank" class="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-navy-950 font-semibold px-5 py-2.5 rounded-lg shadow-md transition duration-300 transform hover:-translate-y-0.5 flex items-center space-x-2 text-sm">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Hubungi WA</span>
+                    </a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white p-2 rounded-md focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="hidden md:hidden bg-navy-900 border-t border-white/10" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#beranda" class="block text-slate-300 hover:bg-navy-800 hover:text-white px-3 py-3 rounded-md text-base font-medium">Beranda</a>
+                <a href="#tentang" class="block text-slate-300 hover:bg-navy-800 hover:text-white px-3 py-3 rounded-md text-base font-medium">Tentang Kami</a>
+                <a href="#layanan" class="block text-slate-300 hover:bg-navy-800 hover:text-white px-3 py-3 rounded-md text-base font-medium">Layanan</a>
+                <a href="#ahli-hukum" class="block text-slate-300 hover:bg-navy-800 hover:text-white px-3 py-3 rounded-md text-base font-medium">Para Ahli Hukum</a>
+                <a href="#faq" class="block text-slate-300 hover:bg-navy-800 hover:text-white px-3 py-3 rounded-md text-base font-medium">FAQ</a>
+                <a href="#kontak" class="block text-slate-300 hover:bg-navy-800 hover:text-white px-3 py-3 rounded-md text-base font-medium">Kontak</a>
+                <div class="pt-4 pb-2 px-3">
+                    <a href="https://wa.me/6285372687679" target="_blank" class="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 font-bold py-3 px-4 rounded-lg flex items-center justify-center space-x-2 shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Hubungi WA</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-bg min-h-screen flex items-center text-white pt-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(234,179,8,0.15),transparent_50%)]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Text Content Left -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <span class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full text-gold-400 text-sm font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-certificate text-xs"></i>
+                        <span>Firma Hukum Terbaik &amp; Terpercaya di Indonesia</span>
+                    </span>
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white">
+                        Keadilan, Integritas, &amp; <br class="hidden sm:inline">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-yellow-200">Perlindungan Hukum</span> yang Tangguh
+                    </h1>
+                    <p class="text-slate-300 text-lg max-w-2xl mx-auto lg:mx-0">
+                        Kami berdedikasi untuk memberikan solusi hukum strategis dan pembelaan terbaik bagi klien korporat maupun perorangan, didukung oleh barisan ahli hukum yang kompeten dan berintegritas tinggi.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <a href="https://wa.me/6285372687679" target="_blank" class="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-navy-950 font-bold px-8 py-4 rounded-lg shadow-xl hover:shadow-gold-500/10 transition-all duration-300 transform hover:-translate-y-1 text-center flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Hubungi WA</span>
+                        </a>
+                        <a href="#ahli-hukum" class="border border-white/30 hover:border-white/60 bg-white/5 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 text-center">
+                            Kenali Advokat Kami
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Consultation Form Right -->
+                <div class="lg:col-span-5">
+                    <div class="bg-navy-900/90 backdrop-blur-lg border border-white/10 p-8 rounded-2xl shadow-2xl space-y-6">
+                        <div class="border-b border-white/10 pb-4">
+                            <h3 class="font-serif text-xl font-bold text-white">Jadwalkan Konsultasi</h3>
+                            <p class="text-xs text-slate-400 mt-1">Isi formulir singkat di bawah, tim hukum kami akan menghubungi Anda segera.</p>
+                        </div>
+                        <form id="hero-consultation-form" onsubmit="handleQuickFormSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Nama Lengkap</label>
+                                <input type="text" id="hero-name" required class="w-full bg-navy-950/70 border border-white/10 focus:border-gold-500 text-white px-4 py-3 rounded-lg text-sm outline-none transition" placeholder="Contoh: Budi Santoso">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Nomor WhatsApp/HP</label>
+                                <input type="tel" id="hero-phone" required class="w-full bg-navy-950/70 border border-white/10 focus:border-gold-500 text-white px-4 py-3 rounded-lg text-sm outline-none transition" placeholder="Contoh: 08123456789">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Topik Permasalahan Hukum</label>
+                                <select id="hero-topic" class="w-full bg-navy-950/70 border border-white/10 focus:border-gold-500 text-white px-4 py-3 rounded-lg text-sm outline-none transition">
+                                    <option value="Hukum Korporasi" class="bg-navy-900">Hukum Korporasi &amp; Bisnis</option>
+                                    <option value="Litigasi & Perdata" class="bg-navy-900">Perdata &amp; Pidana</option>
+                                    <option value="Mediasi" class="bg-navy-900">Mediasi &amp; Arbitrase</option>
+                                    <option value="Properti" class="bg-navy-900">Hukum Properti &amp; Pertanahan</option>
+                                    <option value="Kenotariatan" class="bg-navy-900">Kenotariatan &amp; Dokumen Legal</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Deskripsi Masalah</label>
+                                <textarea id="hero-message" rows="3" required class="w-full bg-navy-950/70 border border-white/10 focus:border-gold-500 text-white px-4 py-3 rounded-lg text-sm outline-none transition resize-none" placeholder="Tulis ringkasan singkat permasalahan hukum Anda..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-navy-950 font-bold py-3.5 rounded-lg shadow-lg hover:shadow-gold-500/10 transition-all duration-300">
+                                Kirim Permohonan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Stats Banner -->
+    <section class="bg-navy-950 border-y border-white/10 py-10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <h3 class="font-serif text-3xl sm:text-4xl font-bold text-gold-500">10+</h3>
+                    <p class="text-xs text-slate-400 mt-2 uppercase tracking-widest">Tahun Pengalaman</p>
+                </div>
+                <div>
+                    <h3 class="font-serif text-3xl sm:text-4xl font-bold text-gold-500">500+</h3>
+                    <p class="text-xs text-slate-400 mt-2 uppercase tracking-widest">Kasus Terselesaikan</p>
+                </div>
+                <div>
+                    <h3 class="font-serif text-3xl sm:text-4xl font-bold text-gold-500">98%</h3>
+                    <p class="text-xs text-slate-400 mt-2 uppercase tracking-widest">Tingkat Kepuasan Klien</p>
+                </div>
+                <div>
+                    <h3 class="font-serif text-3xl sm:text-4xl font-bold text-gold-500">9</h3>
+                    <p class="text-xs text-slate-400 mt-2 uppercase tracking-widest">Advokat Senior Ahli</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang" class="py-24 bg-white relative">
+        <div class="absolute -top-12 left-0 w-72 h-72 bg-gold-400/5 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                <!-- Left Image Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=800" alt="Law Office Interior" class="w-full object-cover h-[450px]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950/70 to-transparent"></div>
+                    </div>
+                    <!-- Absolute badge -->
+                    <div class="absolute -bottom-6 -right-6 bg-navy-950 text-white p-6 rounded-2xl shadow-2xl max-w-xs border-l-4 border-gold-500 z-20">
+                        <i class="fa-solid fa-quote-left text-gold-500 text-2xl mb-2 block"></i>
+                        <p class="text-xs text-slate-300 italic">"Kami tidak hanya membela hak-hak legal Anda, kami menegakkan kehormatan, integritas, dan martabat keadilan."</p>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="space-y-3">
+                        <span class="text-gold-600 font-bold text-sm uppercase tracking-widest block">PROFIL FIRMA HUKUM</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-950 leading-tight">Mengenal Lebih Dekat Adhiyaksa &amp; Partners</h2>
+                        <div class="h-1 w-20 bg-gold-500 rounded-full"></div>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-base">
+                        Berkedudukan di wilayah strategis Kota Bandung, tepatnya di <span class="font-semibold text-navy-950">Jalan AH. Nasution No. 105, Cipadung, Cibiru</span>, Adhiyaksa &amp; Partners Law Firm berkomitmen menyediakan jasa konsultasi, penyelesaian sengketa, dan pendampingan hukum yang komprehensif. Kami sangat menghargai privasi dan kepercayaan klien, serta memprioritaskan penyelesaian hukum yang elegan, taktis, dan tuntas.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-navy-50 p-3.5 rounded-xl text-gold-600 shadow-sm border border-navy-100">
+                                <i class="fa-solid fa-gavel text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-navy-950 text-base">Integritas Tanpa Batas</h4>
+                                <p class="text-xs text-slate-500 mt-1">Kami menjunjung tinggi kode etik profesi advokat dengan transparansi penanganan perkara yang teruji.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-navy-50 p-3.5 rounded-xl text-gold-600 shadow-sm border border-navy-100">
+                                <i class="fa-solid fa-shield-halved text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-navy-950 text-base">Perlindungan Menyeluruh</h4>
+                                <p class="text-xs text-slate-500 mt-1">Kerangka pembelaan hukum dirancang secara presisi dan disesuaikan dengan kondisi unik setiap perkara.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Hukum Section -->
+    <section id="layanan" class="py-24 bg-navy-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(234,179,8,0.06),transparent_50%)]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-gold-400 font-bold text-sm uppercase tracking-widest block">SPESIALISASI KAMI</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold">Layanan Hukum &amp; Praktek Utama</h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-gold-500 to-gold-400 mx-auto rounded-full"></div>
+                <p class="text-slate-300 text-sm md:text-base">
+                    Kami melayani berbagai kebutuhan hukum baik penanganan perkara di dalam pengadilan (Litigasi) maupun konsultasi di luar pengadilan (Non-Litigasi).
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-navy-900/60 border border-white/10 hover:border-gold-500/40 p-8 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="w-12 h-12 bg-gold-500/10 text-gold-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-navy-950 transition-all duration-300">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Hukum Korporasi &amp; Bisnis</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Pendirian badan usaha (PT, CV), penyusunan draf kontrak legal, kepatuhan legal korporasi (*legal compliance*), merger &amp; akuisisi, serta penanganan sengketa bisnis secara tuntas.
+                    </p>
+                    <a href="#kontak" class="text-xs text-gold-400 font-semibold group-hover:text-white transition-colors flex items-center space-x-1">
+                        <span>Hubungi Kami</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-navy-900/60 border border-white/10 hover:border-gold-500/40 p-8 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="w-12 h-12 bg-gold-500/10 text-gold-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-navy-950 transition-all duration-300">
+                        <i class="fa-solid fa-scale-unbalanced-ice"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Litigasi Perdata &amp; Pidana</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Pendampingan hukum di semua tingkatan peradilan baik kasus pidana di kepolisian, kejaksaan, maupun pengadilan sipil, serta penyelesaian tuntutan sengketa perdata.
+                    </p>
+                    <a href="#kontak" class="text-xs text-gold-400 font-semibold group-hover:text-white transition-colors flex items-center space-x-1">
+                        <span>Hubungi Kami</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-navy-900/60 border border-white/10 hover:border-gold-500/40 p-8 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="w-12 h-12 bg-gold-500/10 text-gold-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-navy-950 transition-all duration-300">
+                        <i class="fa-solid fa-handshake-simple"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Mediasi &amp; Arbitrase</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Penyelesaian perselisihan secara damai di luar mekanisme pengadilan dengan panduan mediator bersertifikat untuk menghasilkan kesepakatan mufakat yang berkekuatan hukum.
+                    </p>
+                    <a href="#kontak" class="text-xs text-gold-400 font-semibold group-hover:text-white transition-colors flex items-center space-x-1">
+                        <span>Hubungi Kami</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-navy-900/60 border border-white/10 hover:border-gold-500/40 p-8 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="w-12 h-12 bg-gold-500/10 text-gold-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-navy-950 transition-all duration-300">
+                        <i class="fa-solid fa-building-user"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Hukum Agraria &amp; Properti</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Audit kepemilikan tanah, penyelesaian sengketa hak milik, sengketa sewa-menyewa, pengurusan sertifikat tanah di BPN, serta pembuatan legalitas transaksi properti.
+                    </p>
+                    <a href="#kontak" class="text-xs text-gold-400 font-semibold group-hover:text-white transition-colors flex items-center space-x-1">
+                        <span>Hubungi Kami</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-navy-900/60 border border-white/10 hover:border-gold-500/40 p-8 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="w-12 h-12 bg-gold-500/10 text-gold-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-navy-950 transition-all duration-300">
+                        <i class="fa-solid fa-signature"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Kenotariatan &amp; Legal Audit</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Pemberian jasa audit hukum (*legal audit*) atas dokumen kenotariatan, hak waris, pembagian harta bersama, serta memastikan keabsahan formal dokumen hukum krusial Anda.
+                    </p>
+                    <a href="#kontak" class="text-xs text-gold-400 font-semibold group-hover:text-white transition-colors flex items-center space-x-1">
+                        <span>Hubungi Kami</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-navy-900/60 border border-white/10 hover:border-gold-500/40 p-8 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="w-12 h-12 bg-gold-500/10 text-gold-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-navy-950 transition-all duration-300">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Hukum Keluarga &amp; Waris</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Penyelesaian masalah perceraian, pembagian harta gono-gini, hak asuh anak, sengketa waris adat &amp; syariah, serta adopsi anak secara legal melalui penetapan pengadilan resmi.
+                    </p>
+                    <a href="#kontak" class="text-xs text-gold-400 font-semibold group-hover:text-white transition-colors flex items-center space-x-1">
+                        <span>Hubungi Kami</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Para Ahli Hukum Section -->
+    <section id="ahli-hukum" class="py-24 bg-navy-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-gold-600 font-bold text-sm uppercase tracking-widest block">DEWAN ADVOKAT</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-950">Kenali Para Ahli Hukum Kami</h2>
+                <div class="h-1 w-20 bg-gold-500 mx-auto rounded-full"></div>
+                <p class="text-slate-600 text-sm md:text-base">
+                    Adhiyaksa &amp; Partners didukung oleh jajaran advokat, legal auditor, dan mediator bersertifikasi kompeten yang siap memperjuangkan keadilan hukum Anda melalui kanal komunikasi pribadi masing-masing divisi.
+                </p>
+
+                <!-- Filter Buttons for Better UX -->
+                <div class="flex flex-wrap justify-center gap-2 pt-6">
+                    <button onclick="filterLawyers('semua')" id="btn-semua" class="lawyer-filter-btn px-4 py-2 text-xs font-semibold rounded-full bg-navy-950 text-gold-400 transition-all">Semua Ahli</button>
+                    <button onclick="filterLawyers('litigasi')" id="btn-litigasi" class="lawyer-filter-btn px-4 py-2 text-xs font-semibold rounded-full bg-white text-navy-900 border border-navy-100 hover:bg-navy-950 hover:text-gold-400 transition-all">Litigasi &amp; Pidana</button>
+                    <button onclick="filterLawyers('korporasi')" id="btn-korporasi" class="lawyer-filter-btn px-4 py-2 text-xs font-semibold rounded-full bg-white text-navy-900 border border-navy-100 hover:bg-navy-950 hover:text-gold-400 transition-all">Korporasi &amp; Kontrak</button>
+                    <button onclick="filterLawyers('mediasi')" id="btn-mediasi" class="lawyer-filter-btn px-4 py-2 text-xs font-semibold rounded-full bg-white text-navy-900 border border-navy-100 hover:bg-navy-950 hover:text-gold-400 transition-all">Mediasi &amp; Audit</button>
+                </div>
+            </div>
+
+            <!-- Lawyers Grid (9 Lawyers - No Images, premium style icons with custom WA Numbers) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="lawyers-grid">
+                
+                <!-- Lawyer 1: Dr. Siti Maryam S.H, M.H -->
+                <div class="lawyer-card bg-white rounded-2xl overflow-hidden shadow-md border border-navy-100/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 p-6 flex flex-col justify-between min-h-[320px]" data-category="litigasi">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-12 h-12 rounded-xl bg-navy-950 flex items-center justify-center text-gold-400 border border-gold-500/30">
+                                <i class="fa-solid fa-scale-balanced text-xl"></i>
+                            </div>
+                            <span class="bg-gold-100 text-gold-850 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Managing Partner</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-serif font-bold text-lg text-navy-950 leading-snug">Dr. Siti Maryam S.H, M.H</h3>
+                            <p class="text-xs text-gold-600 font-semibold uppercase tracking-wider">Advokat Senior &amp; Pidana</p>
+                            <p class="text-xs text-slate-500">Berpengalaman lebih dari 15 tahun memimpin penyelesaian litigasi tingkat tinggi nasional.</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-4">
+                        <button onclick="showLawyerModal('Dr. Siti Maryam S.H, M.H', 'Advokat Senior &amp; Pidana', 'Spesialis dalam litigasi pidana umum, korupsi, serta tata usaha negara. Dr. Siti memimpin komitmen perlindungan hukum klien di tingkat tertinggi.', 'Hukum Pidana, Tata Usaha Negara, Hukum Konstitusi', '6283865580289')" class="text-xs text-navy-900 font-bold hover:text-gold-600 transition-colors">Lihat Detail</button>
+                        <a href="https://wa.me/6283865580289?text=Halo%20Adhiyaksa%20%26%20Partners%2C%20saya%20ingin%20berkonsultasi%20mengenai%20perkara%20hukum%20dengan%20Dr.%20Siti%20Maryam%20S.H%2C%20M.H" target="_blank" class="text-gold-600 hover:text-gold-700 text-sm flex items-center space-x-1">
+                            <i class="fa-brands fa-whatsapp"></i> 
+                            <span class="text-xs font-semibold">Hubungi</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lawyer 2: Nurlia Alawiyah S.H, LL.M -->
+                <div class="lawyer-card bg-white rounded-2xl overflow-hidden shadow-md border border-navy-100/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 p-6 flex flex-col justify-between min-h-[320px]" data-category="korporasi">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-12 h-12 rounded-xl bg-navy-950 flex items-center justify-center text-gold-400 border border-gold-500/30">
+                                <i class="fa-solid fa-globe text-xl"></i>
+                            </div>
+                            <span class="bg-gold-100 text-gold-850 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Senior Partner</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-serif font-bold text-lg text-navy-950 leading-snug">Nurlia Alawiyah S.H, LL.M</h3>
+                            <p class="text-xs text-gold-600 font-semibold uppercase tracking-wider">Hukum Internasional &amp; Bisnis</p>
+                            <p class="text-xs text-slate-500">Lulusan universitas terkemuka spesialisasi kontrak dagang transaksional lintas batas.</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-4">
+                        <button onclick="showLawyerModal('Nurlia Alawiyah S.H, LL.M', 'Hukum Internasional &amp; Bisnis', 'Fokus pada hukum bisnis internasional, arbitrase internasional, serta penataan struktur investasi asing (PMA).', 'Hukum Dagang, Investasi Asing, Arbitrase Komersial', '6285372687679')" class="text-xs text-navy-900 font-bold hover:text-gold-600 transition-colors">Lihat Detail</button>
+                        <a href="https://wa.me/6285372687679?text=Halo%20Adhiyaksa%20%26%20Partners%2C%20saya%20ingin%20berkonsultasi%20mengenai%20perkara%20hukum%20dengan%20Nurlia%20Alawiyah%20S.H%2C%20LL.M" target="_blank" class="text-gold-600 hover:text-gold-700 text-sm flex items-center space-x-1">
+                            <i class="fa-brands fa-whatsapp"></i> 
+                            <span class="text-xs font-semibold">Hubungi</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lawyer 3: Faiz Romdloni S.H, M.H -->
+                <div class="lawyer-card bg-white rounded-2xl overflow-hidden shadow-md border border-navy-100/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 p-6 flex flex-col justify-between min-h-[320px]" data-category="litigasi">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-12 h-12 rounded-xl bg-navy-950 flex items-center justify-center text-gold-400 border border-gold-500/30">
+                                <i class="fa-solid fa-gavel text-xl"></i>
+                            </div>
+                            <span class="bg-gold-100 text-gold-850 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Partner</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-serif font-bold text-lg text-navy-950 leading-snug">Faiz Romdloni S.H, M.H</h3>
+                            <p class="text-xs text-gold-600 font-semibold uppercase tracking-wider">Spesialis Litigasi Pidana</p>
+                            <p class="text-xs text-slate-500">Dikenal atas kelihaian dan ketajaman analisis hukum acara pidana di meja persidangan.</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-4">
+                        <button onclick="showLawyerModal('Faiz Romdloni S.H, M.H', 'Spesialis Litigasi Pidana', 'Ahli dalam menyusun nota keberatan (eksepsi) dan pembelaan taktis dalam perkara kejahatan kerah putih (white collar crime).', 'Hukum Acara Pidana, Fraud Audit, Tindak Pidana Korupsi', '6285817611242')" class="text-xs text-navy-900 font-bold hover:text-gold-600 transition-colors">Lihat Detail</button>
+                        <a href="https://wa.me/6285817611242?text=Halo%20Adhiyaksa%20%26%20Partners%2C%20saya%20ingin%20berkonsultasi%20mengenai%20perkara%20hukum%20dengan%20Faiz%20Romdloni%20S.H%2C%20M.H" target="_blank" class="text-gold-600 hover:text-gold-700 text-sm flex items-center space-x-1">
+                            <i class="fa-brands fa-whatsapp"></i> 
+                            <span class="text-xs font-semibold">Hubungi</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lawyer 4: Selpiana Yusuf S.H, C.L.A -->
+                <div class="lawyer-card bg-white rounded-2xl overflow-hidden shadow-md border border-navy-100/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 p-6 flex flex-col justify-between min-h-[320px]" data-category="mediasi">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-12 h-12 rounded-xl bg-navy-950 flex items-center justify-center text-gold-400 border border-gold-500/30">
+                                <i class="fa-solid fa-clipboard-check text-xl"></i>
+                            </div>
+                            <span class="bg-gold-100 text-gold-850 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Senior Associate</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-serif font-bold text-lg text-navy-950 leading-snug">Selpiana Yusuf S.H, C.L.A</h3>
+                            <p class="text-xs text-gold-600 font-semibold uppercase tracking-wider">Certified Legal Auditor</p>
+                            <p class="text-xs text-slate-500">Spesialisasi audit dokumen transaksi, merger usaha, serta kepatuhan legalitas regulasi.</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-4">
+                        <button onclick="showLawyerModal('Selpiana Yusuf S.H, C.L.A', 'Certified Legal Auditor', 'Selpiana bertanggung jawab atas verifikasi keabsahan formal kontrak bisnis, pendirian korporasi besar, dan penyelarasan peraturan industri.', 'Legal Audit, Kepatuhan Regulasi, Hukum Perbankan', '6285317861636')" class="text-xs text-navy-900 font-bold hover:text-gold-600 transition-colors">Lihat Detail</button>
+                        <a href="https://wa.me/6285317861636?text=Halo%20Adhiyaksa%20%26%20Partners%2C%20saya%20ingin%20berkonsultasi%20mengenai%20perkara%20hukum%20dengan%20Selpiana%20Yusuf%20S.H%2C%20C.L.A" target="_blank" class="text-gold-600 hover:text-gold-700 text-sm flex items-center space-x-1">
+                            <i class="fa-brands fa-whatsapp"></i> 
+                            <span class="text-xs font-semibold">Hubungi</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lawyer 5: Muhammad Zicky Alfian S.H, C.Med -->
+                <div class="lawyer-card bg-white rounded-2xl overflow-hidden shadow-md border border-navy-100/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 p-6 flex flex-col justify-between min-h-[320px]" data-category="mediasi">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-12 h-12 rounded-xl bg-navy-950 flex items-center justify-center text-gold-400 border border-gold-500/30">
+                                <i class="fa-solid fa-handshake text-xl"></i>
+                            </div>
+                            <span class="bg-gold-100 text-gold-850 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Senior Associate</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-serif font-bold text-lg text-navy-950 leading-snug">Muhammad Zicky Alfian S.H, C.Med</h3>
+                            <p class="text-xs text-gold-600 font-semibold uppercase tracking-wider">Certified Mediator</p>
+                            <p class="text-xs text-slate-500">Menyelesaikan sengketa non-litigasi di luar jalur pengadilan dengan teknik mediasi unggul.</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-4">
+                        <button onclick="showLawyerModal('Muhammad Zicky Alfian S.H, C.Med', 'Certified Mediator', 'Zicky adalah penengah bersertifikasi nasional yang telah berhasil merekonsiliasi ratusan perselisihan bisnis dan keluarga di luar persidangan.', 'Mediasi Konflik, Hukum Perdata, Hubungan Industrial', '6285817434918')" class="text-xs text-navy-900 font-bold hover:text-gold-600 transition-colors">Lihat Detail</button>
+                        <a href="https://wa.me/6285817434918?text=Halo%20Adhiyaksa%20%26%20Partners%2C%20saya%20ingin%20berkonsultasi%20mengenai%20perkara%20hukum%20dengan%20Muhammad%20Zicky%20Alfian%20S.H%2C%20C.Med" target="_blank" class="text-gold-600 hover:text-gold-700 text-sm flex items-center space-x-1">
+                            <i class="fa-brands fa-whatsapp"></i> 
+                            <span class="text-xs font-semibold">Hubungi</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lawyer 6: Putri Rahayu S.H, M.KN -->
+                <div class="lawyer-card bg-white rounded-2xl overflow-hidden shadow-md border border-navy-100/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 p-6 flex flex-col justify-between min-h-[320px]" data-category="korporasi">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-12 h-12 rounded-xl bg-navy-950 flex items-center justify-center text-gold-400 border border-gold-500/30">
+                                <i class="fa-solid fa-signature text-xl"></i>
+                            </div>
+                            <span class="bg-gold-100 text-gold-850 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Associate</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-serif font-bold text-lg text-navy-950 leading-snug">Putri Rahayu S.H, M.KN</h3>
+                            <p class="text-xs text-gold-600 font-semibold uppercase tracking-wider">Spesialis Kenotariatan</p>
+                            <p class="text-xs text-slate-500">Ahli dalam penyusunan akta otentik, transaksi tanah, waris, dan legalitas aset korporasi.</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-4">
+                        <button onclick="showLawyerModal('Putri Rahayu S.H, M.KN', 'Spesialis Kenotariatan', 'Fokus pada hukum properti, jaminan fidusia, akta pemindahan hak atas tanah, serta perjanjian pranikah/pascanikah resmi.', 'Hukum Properti, Agraria, Akta Otentik, Waris', '6287776790511')" class="text-xs text-navy-900 font-bold hover:text-gold-600 transition-colors">Lihat Detail</button>
+                        <a href="https://wa.me/6287776790511?text=Halo%20Adhiyaksa%20%26%20Partners%2C%20saya%20ingin%20berkonsultasi%20mengenai%20perkara%20hukum%20dengan%20Putri%20Rahayu%20S.H%2C%20M.KN" target="_blank" class="text-gold-600 hover:text-gold-700 text-sm flex items-center space-x-1">
+                            <i class="fa-brands fa-whatsapp"></i> 
+                            <span class="text-xs font-semibold">Hubungi</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lawyer 7: Ryan Maulana Hidayat S.H, M.H -->
+                <div class="lawyer-card bg-white rounded-2xl overflow-hidden shadow-md border border-navy-100/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 p-6 flex flex-col justify-between min-h-[320px]" data-category="korporasi">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-12 h-12 rounded-xl bg-navy-950 flex items-center justify-center text-gold-400 border border-gold-500/30">
+                                <i class="fa-solid fa-briefcase text-xl"></i>
+                            </div>
+                            <span class="bg-gold-100 text-gold-850 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Associate</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-serif font-bold text-lg text-navy-950 leading-snug">Ryan Maulana Hidayat S.H, M.H</h3>
+                            <p class="text-xs text-gold-600 font-semibold uppercase tracking-wider">Hukum Ketenagakerjaan</p>
+                            <p class="text-xs text-slate-500">Ahli dalam hukum ketenagakerjaan, perselisihan PHK, dan pembuatan peraturan perusahaan.</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-4">
+                        <button onclick="showLawyerModal('Ryan Maulana Hidayat S.H, M.H', 'Hukum Ketenagakerjaan', 'Menangani permasalahan tata tertib perusahaan, sengketa serikat pekerja, pengupahan, dan perwakilan di Pengadilan Hubungan Industrial.', 'Hukum Hubungan Industrial, Kontrak Kerja, PHK', '6281990815637')" class="text-xs text-navy-900 font-bold hover:text-gold-600 transition-colors">Lihat Detail</button>
+                        <a href="https://wa.me/6281990815637?text=Halo%20Adhiyaksa%20%26%20Partners%2C%20saya%20ingin%20berkonsultasi%20mengenai%20perkara%20hukum%20dengan%20Ryan%20Maulana%20Hidayat%20S.H%2C%20M.H" target="_blank" class="text-gold-600 hover:text-gold-700 text-sm flex items-center space-x-1">
+                            <i class="fa-brands fa-whatsapp"></i> 
+                            <span class="text-xs font-semibold">Hubungi</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lawyer 8: Nor Adawiyah S.H, M.H -->
+                <div class="lawyer-card bg-white rounded-2xl overflow-hidden shadow-md border border-navy-100/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 p-6 flex flex-col justify-between min-h-[320px]" data-category="litigasi">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-12 h-12 rounded-xl bg-navy-950 flex items-center justify-center text-gold-400 border border-gold-500/30">
+                                <i class="fa-solid fa-users text-xl"></i>
+                            </div>
+                            <span class="bg-gold-100 text-gold-850 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Associate</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-serif font-bold text-lg text-navy-950 leading-snug">Nor Adawiyah S.H, M.H</h3>
+                            <p class="text-xs text-gold-600 font-semibold uppercase tracking-wider">Hukum Perdata &amp; Keluarga</p>
+                            <p class="text-xs text-slate-500">Mengkhususkan diri pada pembelaan perkara perdata dan hukum keluarga di Pengadilan Agama &amp; Negeri.</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-4">
+                        <button onclick="showLawyerModal('Nor Adawiyah S.H, M.H', 'Hukum Perdata &amp; Keluarga', 'Berfokus pada pemenuhan keadilan dalam sengketa warisan, pengampuan, asuh anak, perceraian, dan pembagian harta bersama.', 'Sengketa Waris, Hukum Keluarga, Perjanjian', '60136446341')" class="text-xs text-navy-900 font-bold hover:text-gold-600 transition-colors">Lihat Detail</button>
+                        <a href="https://wa.me/60136446341?text=Halo%20Adhiyaksa%20%26%20Partners%2C%20saya%20ingin%20berkonsultasi%20mengenai%20perkara%20hukum%20dengan%20Nor%20Adawiyah%20S.H%2C%20M.H" target="_blank" class="text-gold-600 hover:text-gold-700 text-sm flex items-center space-x-1">
+                            <i class="fa-brands fa-whatsapp"></i> 
+                            <span class="text-xs font-semibold">Hubungi</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lawyer 9: Azharya Putra Dimas Fathurrozi S.H, M.H -->
+                <div class="lawyer-card bg-white rounded-2xl overflow-hidden shadow-md border border-navy-100/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 p-6 flex flex-col justify-between min-h-[320px]" data-category="litigasi">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-12 h-12 rounded-xl bg-navy-950 flex items-center justify-center text-gold-400 border border-gold-500/30">
+                                <i class="fa-solid fa-gavel text-xl"></i>
+                            </div>
+                            <span class="bg-gold-100 text-gold-850 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Associate</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-serif font-bold text-lg text-navy-950 leading-snug">Azharya Putra Dimas Fathurrozi S.H, M.H</h3>
+                            <p class="text-xs text-gold-600 font-semibold uppercase tracking-wider">Hukum Properti &amp; Agraria</p>
+                            <p class="text-xs text-slate-500">Spesialis dalam litigasi sengketa pertanahan, perizinan properti, serta hak milik hukum agraria.</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-4">
+                        <button onclick="showLawyerModal('Azharya Putra Dimas Fathurrozi S.H, M.H', 'Hukum Properti &amp; Agraria', 'Mengkhususkan diri dalam penanganan sengketa pertanahan, klaim kepemilikan aset properti, perizinan tata ruang wilayah, serta mediasi konflik pembebasan lahan komersial.', 'Hukum Agraria, Sengketa Tanah, Legalitas Properti', '6281944114057')" class="text-xs text-navy-900 font-bold hover:text-gold-600 transition-colors">Lihat Detail</button>
+                        <a href="https://wa.me/6281944114057?text=Halo%20Adhiyaksa%20%26%20Partners%2C%20saya%20ingin%20berkonsultasi%20mengenai%20perkara%20hukum%20dengan%20Azharya%20Putra%20Dimas%20Fathurrozi%20S.H%2C%20M.H" target="_blank" class="text-gold-600 hover:text-gold-700 text-sm flex items-center space-x-1">
+                            <i class="fa-brands fa-whatsapp"></i> 
+                            <span class="text-xs font-semibold">Hubungi</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 space-y-4">
+                <span class="text-gold-600 font-bold text-sm uppercase tracking-widest block">PERTANYAAN UMUM</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-950">Menjawab Keraguan Anda</h2>
+                <div class="h-1 w-20 bg-gold-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-navy-100 rounded-xl overflow-hidden bg-navy-50/50">
+                    <button class="w-full flex items-center justify-between p-6 text-left outline-none transition-all hover:bg-navy-50" onclick="toggleFaq(1)">
+                        <span class="font-serif font-bold text-navy-950 text-base md:text-lg">Bagaimana proses awal konsultasi hukum di Adhiyaksa &amp; Partners?</span>
+                        <i class="fa-solid fa-chevron-down text-navy-950 transition-transform duration-300" id="faq-icon-1"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed" id="faq-content-1">
+                        Proses dimulai dengan menjadwalkan konsultasi awal baik melalui formulir website, WhatsApp, atau janji temu langsung di kantor kami di Cibiru, Bandung. Anda dapat memaparkan garis besar masalah Anda, dan tim advokat kami akan memberikan analisis awal mengenai langkah hukum terbaik.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-navy-100 rounded-xl overflow-hidden bg-navy-50/50">
+                    <button class="w-full flex items-center justify-between p-6 text-left outline-none transition-all hover:bg-navy-50" onclick="toggleFaq(2)">
+                        <span class="font-serif font-bold text-navy-950 text-base md:text-lg">Berapa biaya penanganan jasa hukum (Lawyer Fee)?</span>
+                        <i class="fa-solid fa-chevron-down text-navy-950 transition-transform duration-300" id="faq-icon-2"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed" id="faq-content-2">
+                        Biaya jasa hukum kami bersifat transparan dan bervariasi bergantung pada kompleksitas perkara, tahapan hukum yang diperlukan, serta durasi penanganan. Kami selalu mendiskusikan hal ini di awal secara tertulis demi integritas hubungan profesional kami dengan klien.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-navy-100 rounded-xl overflow-hidden bg-navy-50/50">
+                    <button class="w-full flex items-center justify-between p-6 text-left outline-none transition-all hover:bg-navy-50" onclick="toggleFaq(3)">
+                        <span class="font-serif font-bold text-navy-950 text-base md:text-lg">Apakah identitas dan kerahasiaan kasus saya terjamin?</span>
+                        <i class="fa-solid fa-chevron-down text-navy-950 transition-transform duration-300" id="faq-icon-3"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed" id="faq-content-3">
+                        Tentu saja. Sesuai Undang-Undang No. 18 Tahun 2003 tentang Advokat, kami wajib memegang teguh rahasia jabatan atas segala informasi yang kami ketahui dari klien kami. Keamanan data dan privasi Anda adalah jaminan mutlak operasional kami.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Lokasi Section -->
+    <section id="kontak" class="py-24 bg-navy-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(234,179,8,0.06),transparent_50%)]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+                
+                <!-- Info Section Left -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="space-y-3">
+                        <span class="text-gold-400 font-bold text-sm uppercase tracking-widest block">HUBUNGI KAMI</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold">Mari Diskusikan Solusi Hukum Anda</h2>
+                        <div class="h-1 w-20 bg-gold-500 rounded-full"></div>
+                    </div>
+                    <p class="text-slate-300 text-sm md:text-base">
+                        Jangan biarkan permasalahan hukum Anda berlarut-larut. Segera hubungi kami untuk mendiskusikan opsi solusi terbaik secara terperinci.
+                    </p>
+
+                    <div class="space-y-6">
+                        <!-- Alamat -->
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-white/10 p-3.5 rounded-xl text-gold-400 border border-white/10">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-white text-base">Alamat Kantor</h4>
+                                <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                                    Jalan AH. Nasution No. 105, Cipadung, <br>
+                                    Cibiru, Kota Bandung, <br>
+                                    Jawa Barat, 40614
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp -->
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-white/10 p-3.5 rounded-xl text-gold-400 border border-white/10">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-white text-base">WhatsApp Official</h4>
+                                <a href="https://wa.me/6285372687679" target="_blank" class="text-xs text-gold-400 hover:underline mt-1 block font-semibold">
+                                    +62 853-7268-7679
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-white/10 p-3.5 rounded-xl text-gold-400 border border-white/10">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-white text-base">Surat Elektronik (Email)</h4>
+                                <a href="mailto:adhiyaksapartnerlaw@gmail.com" class="text-xs text-gold-400 hover:underline mt-1 block">
+                                    adhiyaksapartnerlaw@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Section Right -->
+                <div class="lg:col-span-7 bg-navy-900 border border-white/10 p-8 sm:p-10 rounded-2xl shadow-2xl">
+                    <h3 class="font-serif text-2xl font-bold mb-6 text-white border-b border-white/10 pb-4">Kirim Pesan Langsung</h3>
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Nama Lengkap</label>
+                                <input type="text" id="contact-name" required class="w-full bg-navy-950/70 border border-white/10 focus:border-gold-500 text-white px-4 py-3 rounded-lg text-sm outline-none transition" placeholder="Contoh: Raden Wijaya">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Alamat Email</label>
+                                <input type="email" id="contact-email" required class="w-full bg-navy-950/70 border border-white/10 focus:border-gold-500 text-white px-4 py-3 rounded-lg text-sm outline-none transition" placeholder="Contoh: raden@email.com">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Nomor Telepon/WA</label>
+                                <input type="tel" id="contact-phone" required class="w-full bg-navy-950/70 border border-white/10 focus:border-gold-500 text-white px-4 py-3 rounded-lg text-sm outline-none transition" placeholder="Contoh: 08123456789">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Kategori Perkara</label>
+                                <select id="contact-category" class="w-full bg-navy-950/70 border border-white/10 focus:border-gold-500 text-white px-4 py-3 rounded-lg text-sm outline-none transition">
+                                    <option value="Hukum Perdata">Sengketa Perdata</option>
+                                    <option value="Kasus Pidana">Pidana Khusus &amp; Umum</option>
+                                    <option value="Bisnis & Kontrak">Korporasi &amp; Bisnis</option>
+                                    <option value="Warisan / Keluarga">Keluarga &amp; Waris</option>
+                                    <option value="Lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Tuliskan Kronologi Singkat Perkara</label>
+                            <textarea id="contact-message" rows="5" required class="w-full bg-navy-950/70 border border-white/10 focus:border-gold-500 text-white px-4 py-3 rounded-lg text-sm outline-none transition resize-none" placeholder="Deskripsikan rincian singkat masalah Anda beserta harapan hasil akhir perkara..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-navy-950 font-bold py-4 rounded-lg shadow-xl hover:shadow-gold-500/10 transition-all duration-300 flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Kirim Pesan Konsultasi</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Styled Map Section (Cibiru/Cipadung Area) -->
+            <div class="mt-16 rounded-2xl overflow-hidden border border-white/10 shadow-2xl h-[400px] relative">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6723225219493!2d107.7126131!3d-6.9291118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c24f6057a14f%3A0xc6cb1c7df4c7407a!2sJl.%20A.H.%20Nasution%20No.105%2C%20Cipadung%2C%20Kec.%20Cibiru%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040614!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid" class="w-full h-full border-0 grayscale opacity-90 contrast-125" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-navy-950 text-white border-t border-white/10 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-gradient-to-br from-gold-500 to-gold-700 p-2 rounded-lg">
+                            <i class="fa-solid fa-scale-balanced text-navy-950 text-base"></i>
+                        </div>
+                        <span class="font-serif text-white font-bold text-lg tracking-wider">ADHIYAKSA</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Firma hukum terbaik &amp; terpercaya di Indonesia yang menyajikan pendampingan litigasi dan non-litigasi dengan integritas, kerahasiaan penuh, dan taktik penyelesaian yang legal.
+                    </p>
+                    <div class="flex space-x-4 pt-2">
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all flex items-center justify-center text-xs text-slate-400">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all flex items-center justify-center text-xs text-slate-400">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all flex items-center justify-center text-xs text-slate-400">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tautan Berguna -->
+                <div>
+                    <h4 class="font-serif font-bold text-white text-base mb-4">Navigasi Utama</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="#beranda" class="hover:text-gold-400 transition-colors">Beranda</a></li>
+                        <li><a href="#tentang" class="hover:text-gold-400 transition-colors">Tentang Kami</a></li>
+                        <li><a href="#layanan" class="hover:text-gold-400 transition-colors">Layanan Utama</a></li>
+                        <li><a href="#ahli-hukum" class="hover:text-gold-400 transition-colors">Para Ahli Hukum</a></li>
+                        <li><a href="#kontak" class="hover:text-gold-400 transition-colors">Kontak Advokat</a></li>
+                    </ul>
+                </div>
+
+                <!-- Praktek Utama -->
+                <div>
+                    <h4 class="font-serif font-bold text-white text-base mb-4">Spesialisasi Hukum</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="#layanan" class="hover:text-gold-400 transition-colors">Litigasi Kriminal &amp; Perdata</a></li>
+                        <li><a href="#layanan" class="hover:text-gold-400 transition-colors">Hukum Bisnis &amp; Investasi</a></li>
+                        <li><a href="#layanan" class="hover:text-gold-400 transition-colors">Mediasi Sengketa Alternatif</a></li>
+                        <li><a href="#layanan" class="hover:text-gold-400 transition-colors">Hukum Pertanahan &amp; Agraria</a></li>
+                        <li><a href="#layanan" class="hover:text-gold-400 transition-colors">Hukum Warisan &amp; Keluarga</a></li>
+                    </ul>
+                </div>
+
+                <!-- Jam Operasional -->
+                <div>
+                    <h4 class="font-serif font-bold text-white text-base mb-4">Jam Operasional</h4>
+                    <ul class="space-y-2 text-xs text-slate-400 leading-relaxed">
+                        <li class="flex justify-between border-b border-white/5 pb-2">
+                            <span>Senin - Jumat:</span>
+                            <span class="text-gold-400 font-semibold">08.30 - 17.00 WIB</span>
+                        </li>
+                        <li class="flex justify-between border-b border-white/5 pb-2">
+                            <span>Sabtu (Kondisional):</span>
+                            <span class="text-gold-400 font-semibold">09.00 - 13.00 WIB</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Minggu &amp; Hari Besar:</span>
+                            <span class="text-red-400 font-semibold">Tutup (Darurat saja)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hak Cipta & Disclaimer -->
+            <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 space-y-4 sm:space-y-0">
+                <p>&copy; 2026 Adhiyaksa &amp; Partners Law Firm. All Rights Reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-slate-300">Syarat &amp; Ketentuan</a>
+                    <a href="#" class="hover:text-slate-300">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Profile Detail Modal -->
+    <div id="lawyer-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/80 backdrop-blur-sm hidden">
+        <div class="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-navy-100 transform transition-transform duration-300 scale-95" id="modal-container">
+            <!-- Header Modal -->
+            <div class="bg-navy-950 p-6 text-white relative">
+                <button onclick="closeLawyerModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+                <h3 class="font-serif font-bold text-2xl" id="modal-name">Nama Advokat</h3>
+                <p class="text-xs text-gold-400 uppercase tracking-widest mt-1" id="modal-role">Role</p>
+            </div>
+            <!-- Body Modal -->
+            <div class="p-8 space-y-6">
+                <div>
+                    <h4 class="font-serif font-bold text-navy-950 text-sm mb-2">Biografi &amp; Bidang Keahlian</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed" id="modal-bio">Biografi singkat</p>
+                </div>
+                <div>
+                    <h4 class="font-serif font-bold text-navy-950 text-sm mb-2">Area Fokus Utama</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed font-semibold text-gold-700" id="modal-focus">Fokus area</p>
+                </div>
+                <div class="pt-4 border-t border-slate-100 flex justify-end space-x-3">
+                    <button onclick="closeLawyerModal()" class="px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold rounded-lg text-xs transition-colors">Tutup</button>
+                    <a href="#" id="modal-whatsapp" target="_blank" class="px-5 py-2.5 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-navy-950 font-bold rounded-lg text-xs transition-colors flex items-center space-x-1.5">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Konsultasi Langsung</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification for Form Feedback -->
+    <div id="toast-notification" class="fixed bottom-6 right-6 z-50 bg-navy-900 border border-gold-500 text-white px-6 py-4 rounded-xl shadow-2xl transform translate-y-20 opacity-0 transition-all duration-300 flex items-center space-x-3 max-w-sm">
+        <div class="bg-gold-500 text-navy-950 p-2 rounded-lg">
+            <i class="fa-solid fa-check text-base"></i>
+        </div>
+        <div>
+            <h4 class="font-bold text-xs">Pesan Terkirim!</h4>
+            <p class="text-[10px] text-slate-400 mt-0.5" id="toast-message">Formulir Anda berhasil kami terima.</p>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript Engine -->
+    <script>
+        // Header Scroll Animation
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.remove('bg-navy-950/90');
+                header.classList.add('bg-navy-950/98', 'shadow-lg');
+            } else {
+                header.classList.remove('bg-navy-950/98', 'shadow-lg');
+                header.classList.add('bg-navy-950/90');
+            }
+        });
+
+        // Mobile Menu Toggling
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            } else {
+                menuIcon.className = 'fa-solid fa-xmark text-2xl';
+            }
+        });
+
+        // Close Mobile Menu on Click Link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            });
+        });
+
+        // FAQ Toggle Logic
+        function toggleFaq(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Lawyer Filtering Algorithm
+        function filterLawyers(category) {
+            const cards = document.querySelectorAll('.lawyer-card');
+            const buttons = document.querySelectorAll('.lawyer-filter-btn');
+
+            // Reset Active Button Style
+            buttons.forEach(btn => {
+                btn.className = 'lawyer-filter-btn px-4 py-2 text-xs font-semibold rounded-full bg-white text-navy-900 border border-navy-100 hover:bg-navy-950 hover:text-gold-400 transition-all';
+            });
+
+            // Set Current Active Button
+            const activeBtn = document.getElementById(`btn-${category}`);
+            if (activeBtn) {
+                activeBtn.className = 'lawyer-filter-btn px-4 py-2 text-xs font-semibold rounded-full bg-navy-950 text-gold-400 transition-all';
+            }
+
+            // Perform Filter Animation
+            cards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                if (category === 'semua' || cardCategory === category) {
+                    card.style.display = 'block';
+                    setTimeout(() => { card.style.opacity = '1'; }, 10);
+                } else {
+                    card.style.opacity = '0';
+                    setTimeout(() => { card.style.display = 'none'; }, 200);
+                }
+            });
+        }
+
+        // Modal Controls with Custom WA Redirection
+        const modal = document.getElementById('lawyer-modal');
+        const modalContainer = document.getElementById('modal-container');
+
+        function showLawyerModal(name, role, bio, focus, customPhone) {
+            document.getElementById('modal-name').innerText = name;
+            document.getElementById('modal-role').innerHTML = role;
+            document.getElementById('modal-bio').innerText = bio;
+            document.getElementById('modal-focus').innerText = focus;
+            
+            // Mengatur tujuan WhatsApp personal ahli hukum terkait
+            const waBase = "https://wa.me/" + customPhone;
+            const message = encodeURIComponent(`Halo Adhiyaksa & Partners, saya ingin berkonsultasi mengenai perkara hukum secara spesifik dengan Bapak/Ibu ${name}.`);
+            document.getElementById('modal-whatsapp').href = `${waBase}?text=${message}`;
+
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modalContainer.classList.remove('scale-95');
+                modalContainer.classList.add('scale-100');
+            }, 50);
+        }
+
+        function closeLawyerModal() {
+            modalContainer.classList.remove('scale-100');
+            modalContainer.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 200);
+        }
+
+        // Click outside modal to close
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeLawyerModal();
+            }
+        });
+
+        // Toast Feedback System
+        function triggerToast(messageText) {
+            const toast = document.getElementById('toast-notification');
+            document.getElementById('toast-message').innerText = messageText;
+            
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 5000);
+        }
+
+        // Consultation Form Submissions
+        function handleQuickFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('hero-name').value;
+            const topic = document.getElementById('hero-topic').value;
+            
+            triggerToast(`Terima kasih ${name}, tim kami akan membalas Anda perihal ${topic} segera melalui nomor telepon.`);
+            event.target.reset();
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('contact-name').value;
+            const category = document.getElementById('contact-category').value;
+            
+            triggerToast(`Permohonan ${category} atas nama ${name} berhasil dikirim ke platform kami.`);
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
